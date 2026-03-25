@@ -4,6 +4,7 @@ import json
 import os
 from flask import Flask, request, abort
 
+
 app = Flask(__name__)
 
 # Load your secret from an environment variable for security
