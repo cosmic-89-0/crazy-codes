@@ -37,6 +37,7 @@ def github_webhook():
     if not verify_signature(request.data, signature):
         abort(403, "Invalid signature")
 
+    
     # 2. Parse Payload
     payload = request.json
     if not payload:
